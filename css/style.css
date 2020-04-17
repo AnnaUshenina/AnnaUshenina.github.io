@@ -1,0 +1,51 @@
+.question
+{
+    width: 600px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    font-family: 'Trebuchet MS','Lucida Sans';
+}
+
+.result
+{
+    width: 600px; 
+    margin: 0 auto;
+    font-family: 'Trebuchet MS','Lucida Sans';
+}
+
+.answer
+{
+    cursor: pointer;
+    width: 600px; 
+    margin: 0 auto;
+    padding-inline-start: 0px;
+    list-style: none;
+    counter-reset: li;
+}
+.answer li 
+{
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 1.5em;
+    border: 3px solid #CADFCF;
+    padding: 0.6em;
+    border-radius: 4px;
+    background: #FEFEFE;
+    color: #231F20;
+    font-family: 'Trebuchet MS','Lucida Sans';
+}
+.answer li::before
+{
+    cursor: pointer;
+    position: absolute;
+    top: -0.7em;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    font-size: 16px;
+    font-weight: bold;
+    color: #DCC24B;
+    background: #FEFEFE;
+    border-radius: 50%;
+    counter-increment: li;
+    content: counter(li);
+}
